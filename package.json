@@ -1,0 +1,22 @@
+{
+  "name": "laboratorio-05-sebastianmaluk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICC3103-202110/laboratorio-05-SebastianMaluk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICC3103-202110/laboratorio-05-SebastianMaluk/issues"
+  },
+  "homepage": "https://github.com/ICC3103-202110/laboratorio-05-SebastianMaluk#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
+}
