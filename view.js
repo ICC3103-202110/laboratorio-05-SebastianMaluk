@@ -21,10 +21,10 @@ function getTable(model){
     const {total} = model
     return [
         {
-            "Bill Amount": billAmount,
-            "Tip (%)": tipPercent,
-            "Tip": tip,
-            "Total": total}
+            "Bill Amount": `$${+billAmount.toFixed(2)}`,
+            "Tip (%)": `${+tipPercent.toFixed(2)}%`,
+            "Tip": `$${+tip.toFixed(2)}`,
+            "Total": `$${+total.toFixed(2)}`}
     ]
 }
 
