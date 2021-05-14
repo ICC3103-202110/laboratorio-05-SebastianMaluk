@@ -24,42 +24,27 @@ function getTable(model){
             "Bill Amount": billAmount,
             "Tip (%)": tipPercent,
             "Tip": tip,
-            "Total": total
-        }
+            "Total": total}
     ]
 }
 
 function inputForm(model){
     const {billAmount} = model
     const {tipPercent} = model
-
     return inquirer.prompt([
         {
             name: "billAmount",
             type: "number",
             message: "Bill Amount? ",
             default: billAmount,
-            validate: function(value){
-                if (value >= 0){
-                    return true
-                } else {
-                    return "Enter positive bill amount"
-                }
-            }
+
         },
         {
             name: "tipPercent",
             type: "number",
             message: "Tip(%)? ",
             default: tipPercent,
-            validate: function(value){
-                if (value >= 0){
-                    return true
-                } else {
-                    return "Enter positive tip percent"
                 }
-            }
-        }
     ])
 }
 
