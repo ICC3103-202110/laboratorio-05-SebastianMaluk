@@ -1,15 +1,14 @@
 function update(input, model){
-    const {billAmount} = model
-    const newBillAmount = input["billAmount"]
-    const newTipPercent = input["tipPercent"]
-    const newTip = newBillAmount*newTipPercent/100
-    const newTotal = newBillAmount + newTip
+    const {billAmount} = input
+    const {tipPercent} = input
+    const tip = billAmount*tipPercent/100
+    const total = billAmount + tip
     return {
         ...model,
-        billAmount: newBillAmount,
-        tipPercent: newTipPercent,
-        tip: newTip,
-        total: newTotal
+        billAmount: billAmount,
+        tipPercent: tipPercent,
+        tip: tip,
+        total: total
     }
 }
 

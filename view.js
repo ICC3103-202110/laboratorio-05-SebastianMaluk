@@ -37,7 +37,6 @@ function inputForm(model){
             type: "number",
             message: "Bill Amount? ",
             default: billAmount,
-
         },
         {
             name: "tipPercent",
